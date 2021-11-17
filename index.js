@@ -5,11 +5,11 @@ let price;
 let sum = 0;
 while(true){
     item = prompt("Add an item to your shopping list. (Press Cancel to terminate): ");
-    if(item === null){
+    if(item === null || item===""){
         break;
     }else{
         price = Number(prompt("Enter the price of the item: "));
-        if(isNaN(price)){
+        if(isNaN(price) || price ===0){
             alert("Wrong price input! Try again. ");
         }
         else{
