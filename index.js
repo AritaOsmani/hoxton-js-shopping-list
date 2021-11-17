@@ -4,8 +4,8 @@ let item;
 let price;
 let sum = 0;
 while(true){
-    item = prompt("Add an item to your shopping list. (Terminate by typing 0): ");
-    if(item == 0){
+    item = prompt("Add an item to your shopping list. (Press Cancel to terminate): ");
+    if(item === null){
         break;
     }else{
         price = Number(prompt("Enter the price of the item: "));
