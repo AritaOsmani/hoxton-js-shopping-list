@@ -3,7 +3,7 @@ let listOfItems=[["Milk",1.2],["Cocoa",2],["Salad",2],["Carrots",2],["Tomatoes",
 let item;
 let price;
 let sum = 0;
-while(item != 0){
+while(true){
     item = prompt("Add an item to your shopping list. (Terminate by typing 0): ");
     if(item == 0){
         break;
